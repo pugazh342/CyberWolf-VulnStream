@@ -1,0 +1,210 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <style>
+      .title {
+        fill: #ffffff;
+        font-size: 36px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        fill: #94a3b8;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+      }
+
+      .box {
+        stroke-width: 3;
+        rx: 18;
+        ry: 18;
+      }
+
+      .label {
+        fill: white;
+        font-size: 22px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+      }
+
+      .text {
+        fill: #d1d5db;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+      }
+
+      .arrow {
+        stroke: #00d4ff;
+        stroke-width: 4;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+    </style>
+
+    <marker id="arrowhead"
+            markerWidth="10"
+            markerHeight="10"
+            refX="8"
+            refY="3"
+            orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00d4ff"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1100" fill="#0b1220"/>
+
+  <!-- Title -->
+  <text x="800" y="60" text-anchor="middle" class="title">
+    CyberWolf VulnStream CTI Platform
+  </text>
+
+  <text x="800" y="95" text-anchor="middle" class="subtitle">
+    Traditional RAG Architecture for Threat Intelligence
+  </text>
+
+  <!-- Threat Sources -->
+  <rect x="600" y="140" width="400" height="120"
+        fill="#f97316" stroke="#fb923c" class="box"/>
+
+  <text x="800" y="180" text-anchor="middle" class="label">
+    Threat Intelligence Sources
+  </text>
+
+  <text x="800" y="215" text-anchor="middle" class="text">
+    NVD CVE Feed • CISA KEV • MITRE ATT&CK
+  </text>
+
+  <!-- Arrow -->
+  <line x1="800" y1="260" x2="800" y2="320" class="arrow"/>
+
+  <!-- Ingestion -->
+  <rect x="550" y="320" width="500" height="140"
+        fill="#2563eb" stroke="#3b82f6" class="box"/>
+
+  <text x="800" y="360" text-anchor="middle" class="label">
+    Ingestion & Normalization Layer
+  </text>
+
+  <text x="800" y="395" text-anchor="middle" class="text">
+    cve_loader.py
+  </text>
+
+  <text x="800" y="420" text-anchor="middle" class="text">
+    cisa_loader.py
+  </text>
+
+  <text x="800" y="445" text-anchor="middle" class="text">
+    mitre_loader.py + normalizer.py
+  </text>
+
+  <!-- Arrow -->
+  <line x1="800" y1="460" x2="800" y2="520" class="arrow"/>
+
+  <!-- Deduplication -->
+  <rect x="650" y="520" width="300" height="90"
+        fill="#0891b2" stroke="#06b6d4" class="box"/>
+
+  <text x="800" y="570" text-anchor="middle" class="label">
+    Deduplication Engine
+  </text>
+
+  <!-- Arrow -->
+  <line x1="800" y1="610" x2="800" y2="670" class="arrow"/>
+
+  <!-- Embedding -->
+  <rect x="600" y="670" width="400" height="110"
+        fill="#7c3aed" stroke="#8b5cf6" class="box"/>
+
+  <text x="800" y="710" text-anchor="middle" class="label">
+    Embedding Layer
+  </text>
+
+  <text x="800" y="745" text-anchor="middle" class="text">
+    BAAI / bge-small-en-v1.5
+  </text>
+
+  <!-- Arrow -->
+  <line x1="800" y1="780" x2="800" y2="840" class="arrow"/>
+
+  <!-- ChromaDB -->
+  <rect x="500" y="840" width="600" height="170"
+        fill="#15803d" stroke="#22c55e" class="box"/>
+
+  <text x="800" y="880" text-anchor="middle" class="label">
+    ChromaDB Vector Store
+  </text>
+
+  <text x="800" y="915" text-anchor="middle" class="text">
+    Metadata-Aware Storage
+  </text>
+
+  <text x="800" y="945" text-anchor="middle" class="text">
+    CVSS • Technique IDs • Exploitation Flags
+  </text>
+
+  <text x="800" y="975" text-anchor="middle" class="text">
+    Vendor • Product • References
+  </text>
+
+  <!-- Retrieval -->
+  <rect x="1180" y="320" width="320" height="130"
+        fill="#06b6d4" stroke="#22d3ee" class="box"/>
+
+  <text x="1340" y="360" text-anchor="middle" class="label">
+    RAG Retrieval
+  </text>
+
+  <text x="1340" y="395" text-anchor="middle" class="text">
+    Semantic Search
+  </text>
+
+  <text x="1340" y="425" text-anchor="middle" class="text">
+    Metadata Filtering
+  </text>
+
+  <!-- Ollama -->
+  <rect x="1180" y="520" width="320" height="110"
+        fill="#9333ea" stroke="#a855f7" class="box"/>
+
+  <text x="1340" y="565" text-anchor="middle" class="label">
+    Ollama LLM
+  </text>
+
+  <text x="1340" y="600" text-anchor="middle" class="text">
+    DeepSeek / Llama 3
+  </text>
+
+  <!-- FastAPI -->
+  <rect x="1180" y="700" width="320" height="110"
+        fill="#ca8a04" stroke="#eab308" class="box"/>
+
+  <text x="1340" y="745" text-anchor="middle" class="label">
+    FastAPI Backend
+  </text>
+
+  <text x="1340" y="780" text-anchor="middle" class="text">
+    REST APIs
+  </text>
+
+  <!-- React -->
+  <rect x="1180" y="900" width="320" height="120"
+        fill="#dc2626" stroke="#ef4444" class="box"/>
+
+  <text x="1340" y="945" text-anchor="middle" class="label">
+    React CTI Dashboard
+  </text>
+
+  <text x="1340" y="980" text-anchor="middle" class="text">
+    Search • Reports • Analytics
+  </text>
+
+  <!-- Horizontal Connections -->
+  <line x1="1100" y1="925" x2="1180" y2="385" class="arrow"/>
+
+  <line x1="1340" y1="450" x2="1340" y2="520" class="arrow"/>
+  <line x1="1340" y1="630" x2="1340" y2="700" class="arrow"/>
+  <line x1="1340" y1="810" x2="1340" y2="900" class="arrow"/>
+
+</svg>

@@ -1,0 +1,2 @@
+cveID,vendorProject,product,shortDescription,dateAdded,requiredAction
+CVE-2026-1234,Apache,HTTP Server,Apache HTTP Server header parsing vulnerability leading to remote code execution.,2026-02-20,Apply vendor updates immediately.

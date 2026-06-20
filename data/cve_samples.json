@@ -1,0 +1,12 @@
+[
+  {
+    "cve_id": "CVE-2026-1234",
+    "description": "Remote Code Execution (RCE) vulnerability in Apache HTTP Server versions 2.4.50 through 2.4.58 allows unauthenticated remote attackers to execute arbitrary code via a specially crafted HTTP request header.",
+    "cvss": 9.8
+  },
+  {
+    "cve_id": "CVE-2026-5678",
+    "description": "SQL Injection vulnerability in OpenSSL administrative portals allows local authenticated administrators to read sensitive database records via the log viewing dashboard.",
+    "cvss": 7.2
+  }
+]
