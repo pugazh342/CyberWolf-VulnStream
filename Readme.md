@@ -320,10 +320,10 @@ Show critical Apache vulnerabilities exploited in the wild.
 ---
 
 ## 👨‍💻 Author
-
+ 
 K. Pugazhmani
 
-Cybersecurity Student | Security Engineering Enthusiast | Founder of CyberWolf
+Cybersecurity Student | Security Engineering Enthusiast | AI Engineer 
 
 ---
 
